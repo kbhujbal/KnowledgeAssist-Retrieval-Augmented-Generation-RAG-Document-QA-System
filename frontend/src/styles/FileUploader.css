@@ -1,0 +1,148 @@
+.file-uploader {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dropzone {
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f7fafc;
+}
+
+.dropzone:hover:not(.disabled) {
+  border-color: #667eea;
+  background-color: #eef2ff;
+}
+
+.dropzone.active {
+  border-color: #667eea;
+  background-color: #eef2ff;
+  transform: scale(1.02);
+}
+
+.dropzone.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-icon {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.dropzone p {
+  margin: 0.5rem 0;
+  color: #4a5568;
+}
+
+.file-types {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.uploaded-files-list {
+  margin-top: 1rem;
+}
+
+.uploaded-files-list h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
+}
+
+.file-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.file-icon {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.file-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.file-meta {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.error-message {
+  font-size: 0.875rem;
+  color: #e53e3e;
+}
+
+.file-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e2e8f0;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.status-icon.success {
+  color: #48bb78;
+}
+
+.status-icon.error {
+  color: #e53e3e;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.remove-button:hover {
+  color: #e53e3e;
+  background-color: #fff5f5;
+}
