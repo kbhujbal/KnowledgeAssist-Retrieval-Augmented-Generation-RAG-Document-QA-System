@@ -4,7 +4,7 @@ A full-stack Retrieval-Augmented Generation (RAG) application that allows users 
 
 ## ✨ Features
 
-- **Document Upload**: Upload PDF, TXT, and DOCX files with drag-and-drop support
+- **Document Upload**: Upload PDFs, TXT, and DOCX files with drag-and-drop support
 - **Smart Chunking**: Automatically splits documents into optimal chunks for retrieval
 - **Vector Search**: Uses ChromaDB for fast semantic search across documents
 - **AI-Powered Answers**: Leverages Claude or GPT models for context-aware responses
