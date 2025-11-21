@@ -464,7 +464,3 @@ deactivate
 ```
 
 ---
-
-**Status**: Ready for development and testing!
-**Version**: 1.0.0
-Made with ❤️ using FastAPI, React, and LangChain
